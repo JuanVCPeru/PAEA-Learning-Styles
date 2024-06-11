@@ -5,11 +5,12 @@ import matplotlib.pyplot as plt
 
 # Carregar o JSON
 # Carregar o JSON
-with open('data/questions/dog_cat.json', encoding='utf-8') as f:
+with open('data/questions/gardner.json', encoding='utf-8') as f:
     data = json.load(f)
 
 # Título do aplicativo
 st.title("Plataforma de Avaliação de Estilos de Aprendizagem para Apoio do Professor - PAEA")
+st.subheader("Estilos de Aprendizagem de Gardner")
 
 # Dicionário para armazenar as respostas do usuário
 responses = {type_: 0 for type_ in data['types']}
