@@ -1,0 +1,155 @@
+{
+    "types": ["Dog", "Cat"],
+    "questions": [
+        {
+            "question": "Qual é a sua atividade favorita em um dia ensolarado?",
+            "answers": [
+                {
+                    "answer": "Caminhar ao ar livre",
+                    "type": "Dog",
+                    "points": 3
+                },
+                {
+                    "answer": "Curtir o sol na janela",
+                    "type": "Cat",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "O que você prefere fazer em seu tempo livre?",
+            "answers": [
+                {
+                    "answer": "Explorar novos lugares",
+                    "type": "Dog",
+                    "points": 2
+                },
+                {
+                    "answer": "Relaxar em casa",
+                    "type": "Cat",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Você se considera mais independente ou leal?",
+            "answers": [
+                {
+                    "answer": "Independente",
+                    "type": "Cat",
+                    "points": 2
+                },
+                {
+                    "answer": "Leal",
+                    "type": "Dog",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você se sente sobre rotinas?",
+            "answers": [
+                {
+                    "answer": "Eu gosto de ter uma rotina estável",
+                    "type": "Dog",
+                    "points": 3
+                },
+                {
+                    "answer": "Eu prefiro flexibilidade e espontaneidade",
+                    "type": "Cat",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Você se considera mais introvertido ou extrovertido?",
+            "answers": [
+                {
+                    "answer": "Introvertido",
+                    "type": "Cat",
+                    "points": 2
+                },
+                {
+                    "answer": "Extrovertido",
+                    "type": "Dog",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você se sente sobre receber carinho?",
+            "answers": [
+                {
+                    "answer": "Eu adoro receber carinho e atenção",
+                    "type": "Dog",
+                    "points": 3
+                },
+                {
+                    "answer": "Eu prefiro carinho quando estou no controle",
+                    "type": "Cat",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "O que você acha mais importante em um relacionamento?",
+            "answers": [
+                {
+                    "answer": "Companheirismo e lealdade",
+                    "type": "Dog",
+                    "points": 2
+                },
+                {
+                    "answer": "Independência e liberdade",
+                    "type": "Cat",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Qual dessas descrições se encaixa melhor com você: curioso ou reservado?",
+            "answers": [
+                {
+                    "answer": "Curioso",
+                    "type": "Dog",
+                    "points": 3
+                },
+                {
+                    "answer": "Reservado",
+                    "type": "Cat",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Como você se sente sobre ser o centro das atenções?",
+            "answers": [
+                {
+                    "answer": "Eu gosto de chamar a atenção e ser o centro das atenções",
+                    "type": "Dog",
+                    "points": 2
+                },
+                {
+                    "answer": "Eu prefiro ficar na minha e evitar o foco",
+                    "type": "Cat",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "O que você prefere fazer em um dia chuvoso?",
+            "answers": [
+                {
+                    "answer": "Brincar na chuva",
+                    "type": "Dog",
+                    "points": 3
+                },
+                {
+                    "answer": "Aconchegar-se em um lugar quente e confortável",
+                    "type": "Cat",
+                    "points": 3
+                }
+            ]
+        }
+    ]
+}
