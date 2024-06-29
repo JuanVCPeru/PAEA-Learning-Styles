@@ -285,6 +285,231 @@
                     "points": 3
                 }
             ]
+        },
+        {
+            "question": "Qual das opções abaixo melhor descreve sua abordagem de estudo?",
+            "answers": [
+                {
+                    "answer": "Ler textos e anotar informações importantes",
+                    "type": "Linguístico",
+                    "points": 2
+                },
+                {
+                    "answer": "Resolver problemas e fazer exercícios práticos",
+                    "type": "Lógico-Matemático",
+                    "points": 2
+                },
+                {
+                    "answer": "Desenhar diagramas e mapas conceituais",
+                    "type": "Espacial",
+                    "points": 2
+                },
+                {
+                    "answer": "Experimentar e praticar continuamente",
+                    "type": "Corporal-Cinestésico",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "O que mais te motiva a aprender?",
+            "answers": [
+                {
+                    "answer": "Aprofundar meus conhecimentos e habilidades",
+                    "type": "Intrapessoal",
+                    "points": 2
+                },
+                {
+                    "answer": "Resolver problemas complexos e desafiadores",
+                    "type": "Lógico-Matemático",
+                    "points": 2
+                },
+                {
+                    "answer": "Criar e inovar em minha área de interesse",
+                    "type": "Linguístico",
+                    "points": 2
+                },
+                {
+                    "answer": "Explorar novas ideias e possibilidades",
+                    "type": "Existencial",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere se exercitar?",
+            "answers": [
+                {
+                    "answer": "Praticando esportes coletivos",
+                    "type": "Interpessoal",
+                    "points": 2
+                },
+                {
+                    "answer": "Fazendo atividades físicas sozinho",
+                    "type": "Intrapessoal",
+                    "points": 2
+                },
+                {
+                    "answer": "Participando de aulas de dança ou ginástica",
+                    "type": "Corporal-Cinestésico",
+                    "points": 2
+                },
+                {
+                    "answer": "Caminhando e explorando a natureza",
+                    "type": "Naturalista",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Qual dos seguintes aspectos é mais importante para você?",
+            "answers": [
+                {
+                    "answer": "Comunicar-me de forma eficaz",
+                    "type": "Linguístico",
+                    "points": 3
+                },
+                {
+                    "answer": "Resolver problemas de maneira eficiente",
+                    "type": "Lógico-Matemático",
+                    "points": 3
+                },
+                {
+                    "answer": "Visualizar e planejar com clareza",
+                    "type": "Espacial",
+                    "points": 3
+                },
+                {
+                    "answer": "Manter-me ativo e em movimento",
+                    "type": "Corporal-Cinestésico",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere abordar um novo projeto?",
+            "answers": [
+                {
+                    "answer": "Planejando e organizando cada etapa",
+                    "type": "Lógico-Matemático",
+                    "points": 2
+                },
+                {
+                    "answer": "Desenvolvendo ideias e escrevendo um plano",
+                    "type": "Linguístico",
+                    "points": 2
+                },
+                {
+                    "answer": "Visualizando o resultado final e ajustando conforme necessário",
+                    "type": "Espacial",
+                    "points": 2
+                },
+                {
+                    "answer": "Experimentando e ajustando conforme necessário",
+                    "type": "Corporal-Cinestésico",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você gosta de relaxar?",
+            "answers": [
+                {
+                    "answer": "Lendo um bom livro",
+                    "type": "Linguístico",
+                    "points": 2
+                },
+                {
+                    "answer": "Resolvendo quebra-cabeças ou jogos de lógica",
+                    "type": "Lógico-Matemático",
+                    "points": 2
+                },
+                {
+                    "answer": "Desenhando ou pintando",
+                    "type": "Espacial",
+                    "points": 2
+                },
+                {
+                    "answer": "Fazendo exercícios ou praticando esportes",
+                    "type": "Corporal-Cinestésico",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Qual ambiente de trabalho é mais produtivo para você?",
+            "answers": [
+                {
+                    "answer": "Um ambiente silencioso e isolado",
+                    "type": "Intrapessoal",
+                    "points": 3
+                },
+                {
+                    "answer": "Um espaço dinâmico e interativo",
+                    "type": "Interpessoal",
+                    "points": 3
+                },
+                {
+                    "answer": "Um local com recursos visuais e tecnológicos",
+                    "type": "Espacial",
+                    "points": 3
+                },
+                {
+                    "answer": "Um ambiente com música de fundo",
+                    "type": "Musical",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "O que te inspira mais em um projeto?",
+            "answers": [
+                {
+                    "answer": "A possibilidade de comunicar ideias",
+                    "type": "Linguístico",
+                    "points": 2
+                },
+                {
+                    "answer": "A complexidade e os desafios envolvidos",
+                    "type": "Lógico-Matemático",
+                    "points": 2
+                },
+                {
+                    "answer": "A visualização do produto final",
+                    "type": "Espacial",
+                    "points": 2
+                },
+                {
+                    "answer": "A chance de experimentar e inovar",
+                    "type": "Corporal-Cinestésico",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere resolver conflitos?",
+            "answers": [
+                {
+                    "answer": "Conversando e negociando",
+                    "type": "Linguístico",
+                    "points": 2
+                },
+                {
+                    "answer": "Analisando e propondo soluções lógicas",
+                    "type": "Lógico-Matemático",
+                    "points": 2
+                },
+                {
+                    "answer": "Observando e entendendo as perspectivas visuais",
+                    "type": "Espacial",
+                    "points": 2
+                },
+                {
+                    "answer": "Praticando atividades que aliviem o estresse",
+                    "type": "Corporal-Cinestésico",
+                    "points": 2
+                }
+            ]
         }
     ]
 }

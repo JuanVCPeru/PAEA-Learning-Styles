@@ -1,0 +1,560 @@
+{
+    "types": [
+        "Acomodador",
+        "Convergente",
+        "Assimilador",
+        "Divergente"
+    ],
+    "questions": [
+        {
+            "question": "Como você prefere aprender algo novo?",
+            "answers": [
+                {
+                    "answer": "Experimentando diretamente e aprendendo com os erros",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Observando e refletindo sobre o que foi feito",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Estudando teorias e conceitos",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Gerando novas ideias e explorando possibilidades",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Qual atividade te atrai mais em um projeto?",
+            "answers": [
+                {
+                    "answer": "Assumir riscos e resolver problemas de maneira intuitiva",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Tomar decisões e aplicar ideias na prática",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Organizar informações e criar modelos teóricos",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Propor novas abordagens e improvisar",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você aborda a resolução de problemas?",
+            "answers": [
+                {
+                    "answer": "Tentando diferentes soluções até encontrar uma que funcione",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Analisando o problema e aplicando uma solução prática",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Estudando o problema detalhadamente antes de agir",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Explorando várias soluções criativas e alternativas",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Qual tipo de aprendizado você prefere?",
+            "answers": [
+                {
+                    "answer": "Aulas práticas e novos projetos",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Simulações e aplicação prática das ideias",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Palestras, leituras e análises",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Trabalhar em novas ideias e improvisar",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "O que te motiva mais em um ambiente de aprendizagem?",
+            "answers": [
+                {
+                    "answer": "Desafios práticos e experiências diretas",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Tomada de decisão e aplicação de conhecimento",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Organização lógica e aprofundamento teórico",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Criatividade e exploração de novas ideias",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere se preparar para um exame?",
+            "answers": [
+                {
+                    "answer": "Praticando exercícios e experimentos",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Revisando notas e refletindo sobre o conteúdo",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Lendo livros e organizando resumos",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Discutindo ideias e explorando conceitos",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Qual abordagem você utiliza ao iniciar um novo projeto?",
+            "answers": [
+                {
+                    "answer": "Começar a trabalhar imediatamente e ajustar conforme necessário",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Planejar e tomar decisões baseadas em dados concretos",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Organizar e conceitualizar as informações primeiro",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Gerar e discutir novas ideias e possibilidades",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "O que é mais importante para você em um processo de aprendizagem?",
+            "answers": [
+                {
+                    "answer": "Ação prática e aplicação imediata",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Decisões práticas baseadas em observações",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Organização e entendimento teórico",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Criatividade e inovação",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere refletir sobre suas experiências?",
+            "answers": [
+                {
+                    "answer": "Aprendendo com erros e ajustando ações",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Analisando o que aconteceu e como pode ser melhorado",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Estudando e entendendo as teorias por trás",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Explorando novas perspectivas e ideias",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere lidar com informações novas?",
+            "answers": [
+                {
+                    "answer": "Aplicando imediatamente em situações práticas",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Observando e analisando para aplicar depois",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Organizando e estudando em profundidade",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Gerando novas ideias a partir das informações",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere participar de discussões em grupo?",
+            "answers": [
+                {
+                    "answer": "Compartilhando suas experiências e ações",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Observando os pontos de vista dos outros antes de falar",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Apresentando fatos e teorias para apoiar suas ideias",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Propondo novas ideias e alternativas",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Qual é a sua abordagem para aprender uma nova habilidade?",
+            "answers": [
+                {
+                    "answer": "Praticar repetidamente até dominar",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Observar atentamente como os outros fazem",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Estudar a teoria por trás da habilidade",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Explorar diferentes maneiras de aplicar a habilidade",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "O que você considera mais útil ao resolver problemas?",
+            "answers": [
+                {
+                    "answer": "Ação rápida e adaptação",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Reflexão e análise antes de agir",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Teoria e lógica bem fundamentadas",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Criatividade e inovação",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere receber feedback?",
+            "answers": [
+                {
+                    "answer": "Através de experiências práticas e diretas",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Observando e refletindo sobre o feedback",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Analisando teorias e conceitos relacionados ao feedback",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Explorando novas ideias e abordagens baseadas no feedback",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere planejar seu aprendizado?",
+            "answers": [
+                {
+                    "answer": "Definindo atividades práticas e metas de curto prazo",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Analisando necessidades e criando um plano detalhado",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Estudando material teórico e estruturando um cronograma",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Explorando várias abordagens e ajustando conforme necessário",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "O que te ajuda mais a se concentrar durante o estudo?",
+            "answers": [
+                {
+                    "answer": "Envolvimento em atividades práticas",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Ambiente tranquilo para reflexão",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Material de estudo bem organizado",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Estimulação criativa e novas ideias",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Qual é sua abordagem para aprender com os erros?",
+            "answers": [
+                {
+                    "answer": "Experimentar novamente até acertar",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Analisar o que deu errado e corrigir",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Estudar teorias para entender os erros",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Explorar novas maneiras de evitar erros",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere abordar um novo conceito?",
+            "answers": [
+                {
+                    "answer": "Experimentando na prática",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Observando e refletindo sobre o conceito",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Estudando teorias e fundamentos",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Gerando novas ideias e aplicações",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere aprender em um workshop?",
+            "answers": [
+                {
+                    "answer": "Participando ativamente em atividades práticas",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Observando demonstrações e refletindo sobre elas",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Acompanhando explicações teóricas detalhadas",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Colaborando com ideias e soluções criativas",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "Qual é a sua reação ao enfrentar um problema inesperado?",
+            "answers": [
+                {
+                    "answer": "Experimentar diferentes soluções até resolver",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Analisar o problema cuidadosamente antes de agir",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Estudar o problema e encontrar uma solução teórica",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Explorar várias alternativas criativas para resolver",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        },
+        {
+            "question": "Como você prefere realizar um trabalho em equipe?",
+            "answers": [
+                {
+                    "answer": "Assumir a liderança e definir ações práticas",
+                    "type": "Acomodador",
+                    "points": 3
+                },
+                {
+                    "answer": "Observar e tomar decisões baseadas nas contribuições",
+                    "type": "Convergente",
+                    "points": 3
+                },
+                {
+                    "answer": "Organizar informações e planejar teoricamente",
+                    "type": "Assimilador",
+                    "points": 3
+                },
+                {
+                    "answer": "Propor novas ideias e estratégias",
+                    "type": "Divergente",
+                    "points": 3
+                }
+            ]
+        },
+        {
+            "question": "O que te ajuda mais a assimilar um novo conteúdo?",
+            "answers": [
+                {
+                    "answer": "Participar de atividades práticas relacionadas",
+                    "type": "Acomodador",
+                    "points": 2
+                },
+                {
+                    "answer": "Refletir e observar exemplos práticos",
+                    "type": "Convergente",
+                    "points": 2
+                },
+                {
+                    "answer": "Estudar teorias e conceitos detalhadamente",
+                    "type": "Assimilador",
+                    "points": 2
+                },
+                {
+                    "answer": "Explorar diferentes ideias e aplicações",
+                    "type": "Divergente",
+                    "points": 2
+                }
+            ]
+        }
+    ]
+}
