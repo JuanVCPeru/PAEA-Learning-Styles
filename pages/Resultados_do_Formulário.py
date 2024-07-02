@@ -63,8 +63,8 @@ if st.session_state.responses:
     for question_number in set(df['question_number'].unique()):
         question_df = df[df['question_number'] == question_number]
         question_results = question_df.groupby('answer')['user'].count().reset_index()
-        question_results.columns = ['Resposta', 'Qtd']
-        question_results['Tipo'] = get_type_result_from_user(question_df['user'].iloc[0], df)
+        question_results.columns = ['Resposta', 'Qtd de Respostas']
+        question_results['Tipo'] = question_results['Resposta'].apply(lambda x: question_df[question_df['answer'] == x]['type'].iloc[0])
         st.write(f"Questão {question_number}: {question_df['question'].iloc[0]}")
         st.write(question_results)
     
@@ -78,5 +78,12 @@ if st.session_state.responses:
 
     sns.histplot(data=users_type_table, x='type')
     st.pyplot(fig)
+
+    fig, ax = plt.subplots()
+    ax.yaxis.get_major_locator().set_params(integer=True)
+
+    users_type_table['type'].value_counts().plot.pie(autopct='%1.1f%%')
+    st.pyplot(fig)
     
+    st.write('Descritivo dos dados:')
     st.write(df)
