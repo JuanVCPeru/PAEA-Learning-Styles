@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 import time
+import pandas as pd
 # Carregar o JSON
 
 load_dotenv()
@@ -14,13 +15,16 @@ URI = os.getenv("API")
 # Título do aplicativo
 st.set_page_config(page_title="Título da Página", page_icon=":rocket:")
 st.title("Plataforma de Avaliação de Estilos de Aprendizagem para Apoio do Professor - PAEA")
-st.subheader("Questionário de Estilos de Aprendizagem de Gardner")
+st.subheader("Questionário de Estilos de Aprendizagem")
 
 if 'form_name' not in st.session_state:
     st.session_state['form_name'] = ""
 
 if 'form_id' not in st.session_state:
     st.session_state['form_id'] = ""
+
+if "responses" not in st.session_state:
+    st.session_state["responses"] = {}
 
 # Inserir caixa de texto para inserir o formulário
 form_id_to_find = st.text_input("Digite o ID do formulário:")
@@ -52,7 +56,7 @@ if st.session_state.form_name:
         data = json.load(f)
 
     # Dicionário para armazenar as respostas do usuário
-    responses = {type_: 0 for type_ in data['types']}
+    responses = {}
 
     # Criar o formulário dinamicamente
     st.header("Por favor, responda as seguintes questões:")
@@ -60,11 +64,22 @@ if st.session_state.form_name:
     # Inserir caixa de texto para inserir o nome
     name = st.text_input("Digite seu nome:")
 
-    for question in data['questions']:
+    for index, question in enumerate(data['questions'], 1):
         st.write(question['question'])
         options = {answer['answer']: (answer['type'], answer['points']) for answer in question['answers']}
         selected_answer = st.radio("", list(options.keys()), key=question['question'])
-        responses[options[selected_answer][0]] += options[selected_answer][1]
+        # responses[options[selected_answer][0]] += options[selected_answer][1]
+        
+        # Save the question, selected answer, and points in the responses dictionary
+        responses[index] = {
+            'question': question['question'],
+            'answer': selected_answer,
+            'type': options[selected_answer][0],
+            'points': options[selected_answer][1]
+        }
+
+    # Save the responses in session_state
+    st.session_state['responses'] = responses
 
     # Botão de submissão
     if st.button("Submeter"):
@@ -74,56 +89,49 @@ if st.session_state.form_name:
             st.warning("Por favor, digite seu nome.")
         else:
             # Create a dictionary to store the user's answers
-            user_answers = {}
+            user_answers = []
 
             # Iterate over the questions
-            st.write("Respostas:")
-            st.write(responses)
-            for question_number, question in enumerate(data['questions'], 1):
+            final_response: dict[int, dict] = st.session_state['responses']
+            for question_number, answer in final_response.items():
                 
                 # Get the question text
-                question_text = question['question']
-                
-                # Get the available answer options
-                options = {answer['answer']: (answer['type'], answer['points']) for answer in question['answers']}
-                
-                # Get the selected answer from the user
-                selected_answer = st.radio(question_text, list(options.keys()), key=question_number)
-                
-                # Store the user's answer in the dictionary
-                user_answers[question_number] = {
-                    'question': question_text,
-                    'answer': selected_answer,
-                    'type': options[selected_answer][0],
-                    'points': options[selected_answer][1],
+                f_question = answer['question']
+                f_answer = answer['answer']
+                f_type = answer['type']
+                f_points = answer['points']
+
+                answer_dict = {
+                    'question': f_question,
+                    'answer': f_answer,
+                    'type': f_type,
+                    'points': f_points,
                     'question_number': question_number,
                     'user': name,
                     'form_id': st.session_state.form_id,
                 }
-                
+                                
+                user_answers.append(answer_dict)
             
-            # Save the user's answers as a list
-            user_answers_list = list(user_answers.values())
-            
-            # Show a spinner while sending the answers to the API
-            with st.spinner('Submitting answers...'):
-                # Send each user answer to the API
-                for answer in user_answers_list:
+            # # Show a spinner while sending the answers to the API
+            # with st.spinner('Submitting answers...'):
+            #     # Send each user answer to the API
+            #     for answer in user_answers:
 
-                    response = requests.post(f'{URI}/answer', json=answer)
-                    if response.status_code == 200:
-                        st.success("Resposta enviada com sucesso!")
-                    else:
-                        st.error("Falha ao enviar a resposta.")
+            #         response = requests.post(f'{URI}/answer', json=answer)
+            #         if response.status_code == 200:
+            #             st.success("Resposta enviada com sucesso!")
+            #         else:
+            #             st.error("Falha ao enviar a resposta.")
                     
-                    time.sleep(0.5)
+            #         time.sleep(0.5)
             
-            # Hide the spinner once the answers are submitted
-            st.spinner(None)
+            # # Hide the spinner once the answers are submitted
+            # st.spinner(None)
 
             # Calculate the total points for each type
             type_points = {type_: 0 for type_ in data['types']}
-            for answer in user_answers_list:
+            for answer in user_answers:
                 type_points[answer['type']] += answer['points']
 
             # Find the type with the highest points
@@ -132,3 +140,11 @@ if st.session_state.form_name:
 
             # Display the type with the highest points
             st.write(f"O seu estilo de aprendizagem predominante é: {max_type[0]}")
+
+            # Gráfico de pontos por tipo
+            answers_df = pd.DataFrame(user_answers)
+            fig, ax = plt.subplots()
+            # rotate the x labels in 90 degrees
+            plt.xticks(rotation=90)
+            sns.barplot(data=answers_df.groupby('type')['points'].sum().reset_index(), x='type', y='points', ax=ax)
+            st.pyplot(fig)
