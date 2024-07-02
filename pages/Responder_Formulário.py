@@ -113,21 +113,24 @@ if st.session_state.form_name:
                                 
                 user_answers.append(answer_dict)
             
-            # # Show a spinner while sending the answers to the API
-            # with st.spinner('Submitting answers...'):
-            #     # Send each user answer to the API
-            #     for answer in user_answers:
+            # Show a spinner while sending the answers to the API
+            with st.spinner('Submitting answers...'):
+                # Create a list to store the responses
+                api_responses = []
 
-            #         response = requests.post(f'{URI}/answer', json=answer)
-            #         if response.status_code == 200:
-            #             st.success("Resposta enviada com sucesso!")
-            #         else:
-            #             st.error("Falha ao enviar a resposta.")
-                    
-            #         time.sleep(0.5)
-            
-            # # Hide the spinner once the answers are submitted
-            # st.spinner(None)
+                # Send all user answers to the API
+                for answer in user_answers:
+                    response = requests.post(f'{URI}/answer', json=answer)
+                    api_responses.append(response)
+
+                # Check if all api_responses were successful
+                if all(response.status_code == 200 for response in api_responses):
+                    st.success("Respostas enviadas com sucesso!")
+                else:
+                    st.error("Falha ao enviar as respostas.")
+
+            # Hide the spinner once the answers are submitted
+            st.spinner(None)
 
             # Calculate the total points for each type
             type_points = {type_: 0 for type_ in data['types']}
