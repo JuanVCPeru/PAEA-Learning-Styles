@@ -14,8 +14,8 @@ load_dotenv()
 URI = os.getenv("API")
 # Título do aplicativo
 st.set_page_config(page_title="Título da Página", page_icon=":rocket:")
-st.title("Plataforma de Avaliação de Estilos de Aprendizagem para Apoio do Professor - PAEA")
-st.subheader("Questionário de Estilos de Aprendizagem")
+st.title("Plataforma de Evaluación de Estilos de Aprendizaje para Apoyo Docente - PAEA")
+st.subheader("Cuestionario de estilos de aprendizaje")
 
 if 'form_name' not in st.session_state:
     st.session_state['form_name'] = ""
@@ -27,7 +27,7 @@ if "responses" not in st.session_state:
     st.session_state["responses"] = {}
 
 # Inserir caixa de texto para inserir o formulário
-form_id_to_find = st.text_input("Digite o ID do formulário:")
+form_id_to_find = st.text_input("Digite o ID de formulário:")
 
 
 # Botão para buscar o formulário na API
