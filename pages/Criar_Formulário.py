@@ -8,8 +8,8 @@ load_dotenv()
 URI = os.getenv("API")
 
 # Título do aplicativo
-st.set_page_config(page_title="Criar Formulário", page_icon=":rocket:")
-st.title("Crie um Formulário")
+st.set_page_config(page_title="Crear Formulário", page_icon=":rocket:")
+st.title("Crear un Formulário")
 form_text = ""
 form_id = ""
 
