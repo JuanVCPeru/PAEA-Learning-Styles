@@ -1,5 +1,4 @@
 import streamlit as st
 
-
-# Título do aplicativo
-st.title("Plataforma de Avaliação de Estilos de Aprendizagem para Apoio do Professor - PAEA")
+# Título de la aplicación
+st.title("Plataforma de evaluación de estilos de aprendizaje para apoyo docente - PAEA")
